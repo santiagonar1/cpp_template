@@ -21,12 +21,6 @@ make
 
 Now, you should find the binary inside `build/app/`.
 
-To run it, simply execute (in that folder):
-
-```shell
-./app.out --data_directory="/path/to/sea_ice_concentration"
-```
-
 ## Docker
 
 You can use the `Dockerfile` provided by us to create an image in which to build and run the code. So first, build
