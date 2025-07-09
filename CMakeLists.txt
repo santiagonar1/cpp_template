@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.29)
 project(amazing_app)
 
-set(CMAKE_CXX_STANDARD 20)
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
@@ -14,6 +13,7 @@ file(GLOB SOURCES
 )
 
 add_library(${PROJECT_NAME})
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
 
 target_sources(${PROJECT_NAME}
         PRIVATE ${SOURCES})
