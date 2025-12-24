@@ -23,18 +23,9 @@ Now, you should find the binary inside `build/app/`.
 
 ## Docker
 
-You can use the `Dockerfile` provided by us to create an image in which to build and run the code. So first, build
-the image:
+You can also use the [cpp-dev](https://github.com/santiagonar1/dockerfiles/blob/main/cpp-dev.dockerfile) docker image
+to compile and run the code. If you do not want to build it yourself, run:
 
 ```shell
-docker build -t my_image .
-```
-
-Then you can start it and compile/run the code:
-
-```shell
-docker run --rm -it -v .:/my_code my_image bash
-mkdir /my_code/build && cd /my_code/build
-cmake -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake ..
-make
+./run-docker.sh
 ```
