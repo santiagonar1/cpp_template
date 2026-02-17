@@ -3,6 +3,4 @@
 
 #include <foo.hpp>
 
-TEST(FooTest, TestingFoo) {
-    myfoo();
-}
+TEST(FooTest, TestingFoo) { myfoo(); }

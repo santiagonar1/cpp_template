@@ -3,4 +3,4 @@
 
 void myfoo();
 
-#endif //FOO_HPP
+#endif//FOO_HPP

@@ -1,4 +1,3 @@
 #include "foo.hpp"
 
-void myfoo() {
-}
+void myfoo() {}
