@@ -11,7 +11,7 @@ macro(package_add_test TEST_NAME)
             PRIVATE GTest::gtest
             PRIVATE GTest::gmock
             PRIVATE GTest::gtest_main
-            ${PROJECT_NAME}
+            PRIVATE ${PROJECT_NAME}
     )
 
     # gtest_discover_tests replaces gtest_add_tests,
